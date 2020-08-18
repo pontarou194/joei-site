@@ -73,7 +73,7 @@ section
 .bgv
 {
   position: relative;
-  min-height: 100vh;
+  width:100%;
   background: #111;
   font-weight: 700;
   background-size: cover;
