@@ -269,6 +269,23 @@ img
   font-size: 14px;
   font-weight: 400;
 }
+.recruit_description_area{
+  padding: 60px 40px;
+  margin: 20px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.recruit_description_title{
+  font-size: 20px;
+  font-weight: 700;
+}
+.recruit_description{
+  font-size: 10px;
+}
+
 .recruit_form{
   width: 100vw;
   height: 500px;
