@@ -236,8 +236,9 @@ img
 .recruit .content
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+
 }
 .recruit .content .testimonialBx
 {
@@ -253,6 +254,7 @@ img
   font-size: 16px;
   font-weight: 300;
 }
+
 .recruit .content .testimonialBx h3
 {
   margin-top: 40px;
@@ -267,6 +269,71 @@ img
   font-size: 14px;
   font-weight: 400;
 }
+.recruit_form{
+  width: 100vw;
+  height: 500px;
+}
+.hidden_box {
+  margin: 2em 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+  padding: 15px;
+  font-weight: bold;
+  background: #efefef;
+  border-radius: 5px;
+  cursor :pointer;
+  transition: .5s;
+}
+
+/*アイコンを表示*/
+.hidden_box label:before {
+  display: inline-block;
+  content: '\f078';
+  font-family: 'FontAwesome';
+  padding-right: 5px;
+  transition: 0.2s;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+  background: silver;
+}
+
+/*アイコンを切り替え*/
+.hidden_box input:checked + label:before {
+   content: '\f00d';
+   -ms-transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+   color: #668ad8;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked + label + .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+/* ↑応募フォームここまで */
+
 .contact
 {
   background: #111;
@@ -515,5 +582,8 @@ img
   .banner
   {
     padding: 150px 20px 100px;
+  }
+  .recruit_form{
+    width: 100%;
   }
 }
