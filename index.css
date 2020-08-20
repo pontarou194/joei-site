@@ -56,6 +56,7 @@ header ul li a
   margin: 0 15px;
   color: #fff;
   text-decoration: none;
+  z-index: 1;
 }
 header.sticky ul li a
 {
@@ -70,6 +71,18 @@ section
   flex-direction: column;
   text-align: center;
 }
+.bgv_area{
+  position: relative;
+  background-color: #000;
+}
+.bgv_area::after{
+  position: absolute;
+  background-color: #000;
+  top:0;
+  left:0;
+  bottom: 0;
+  left: 0;
+}
 .bgv
 {
   position: relative;
@@ -81,7 +94,21 @@ section
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0.5;
 }
+.thumbnail_bgv{
+  position: absolute;
+  width: 40%;
+  right: 10%;
+  top: 30%;
+  translate: 0.5;
+}
+.thumbnail_bgv:active{
+  transform:scale(1.3);
+  transition: 0.5s linear;
+}
+
+
 .banner h2
 {
   font-size: 3em;
