@@ -287,9 +287,13 @@ img
 }
 
 .recruit_form{
-  width: 100vw;
+  min-width: 50vw;
   height: 500px;
 }
+section .recruit_form{
+  padding: 0;
+}
+
 .hidden_box {
   margin: 2em 0;
   padding: 0;
@@ -349,6 +353,7 @@ img
   height: auto;
   opacity: 1;
 }
+
 /* ↑応募フォームここまで */
 
 .contact
