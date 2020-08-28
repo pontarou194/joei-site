@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 </head>
 <body>
   <header>
@@ -62,27 +63,27 @@
     </div>
     <div class="content">
       <div class="servicesBx">
-        <img src="icon1.png">
+        <img data-src="icon1.png" class="lazyload">
         <h2>建築</h2>
         <p>We're building the foundation of the building.</p>
       </div>
       <div class="servicesBx">
-        <img src="icon2.png">
+        <img data-src="icon2.png" class="lazyload">
         <h2>土木</h2>
         <p>We start by preparing the soil for the building to be built safely</p>
       </div>
       <div class="servicesBx">
-        <img src="icon3.png">
+        <img data-src="icon3.png" class="lazyload">
         <h2>コンクリート</h2>
         <p>Concrete will be poured and cleaned up</p>
       </div>
       <div class="servicesBx">
-        <img src="icon4.png">
+        <img data-src="icon4.png" class="lazyload">
         <h2>機械</h2>
         <p>We use various machines such as cranes, trucks, and hydraulic excavators.</p>
       </div>
       <div class="servicesBx">
-        <img src="icon5.png">
+        <img data-src="icon5.png" class="lazyload">
         <h2>作業着</h2>
         <p>To protect workers' lives,
           we distribute air-conditioned clothing in the summer.
@@ -91,7 +92,7 @@
           in the right places and emphasize the importance of ease of work.</p>
       </div>
       <div class="servicesBx">
-        <img src="icon6.png">
+        <img data-src="icon6.png" class="lazyload">
         <h2>少数精鋭</h2>
         <p>We're a small, elite unit. Each of us has our own specialties and we work efficiently.</p>
       </div>
@@ -104,16 +105,16 @@
     </div>
     <div class="content">
       <div class="workBx">
-        <img src="product1.jpg">
+        <img data-src="product1.jpg" class="lazyload">
       </div>
       <div class="workBx">
-        <img src="product2.jpg">
+        <img data-src="product2.jpg" class="lazyload">
       </div>
       <div class="workBx">
-        <img src="product3.jpg">
+        <img data-src="product3.jpg" class="lazyload">
       </div>
       <div class="workBx">
-        <img src="product4.jpg">
+        <img data-src="product4.jpg" class="lazyload">
       </div>
     </div>
     <div class="heading">
@@ -222,5 +223,6 @@
       menu.classList.toggle('active');
     }
   </script>
+  <script>lazyload();</script>
 </body>
 </html>
