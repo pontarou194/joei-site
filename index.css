@@ -96,6 +96,21 @@ section
   align-items: center;
   opacity: 0.5;
 }
+.bgv_area_notification{
+  color: black;
+  background-color: #EBEDFF;
+  bottom:0;
+  text-align: center;
+  padding: 10px 0;
+  animation-duration: 1s;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  color:skyblue;
+}
 .thumbnail_bgv{
   position: absolute;
   width: 40%;
