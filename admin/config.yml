@@ -1,3 +1,6 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
 
   collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -12,3 +15,9 @@
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+
+# These lines should *not* be indented
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
