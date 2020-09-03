@@ -521,14 +521,15 @@ section .recruit_form{
   {
     width: 40px;
     height: 40px;
-    background: url(menu.png);
+    background: url(media/menu.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
+    cursor: pointer;
   }
   .toggle.active
   {
-    background: url(close.png);
+    background: url(media/close.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
