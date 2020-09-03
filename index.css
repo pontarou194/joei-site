@@ -97,6 +97,7 @@ section
 }
 .bgv_area_notification{
   color: black;
+  font-size: 14px;
   background-color: #EBEDFF;
   bottom:0;
   text-align: center;
