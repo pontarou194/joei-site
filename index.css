@@ -616,6 +616,9 @@ section .recruit_form{
   {
     padding: 100px 20px;
   }
+  .content{
+    font-size: 14px;
+  }
   .banner
   {
     padding: 150px 20px 100px;
