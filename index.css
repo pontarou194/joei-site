@@ -95,6 +95,10 @@ section
   align-items: center;
   opacity: 0.5;
 }
+.bgv-area_attention{
+  overflow: hidden;
+}
+
 .bgv_area_notification{
   color: black;
   font-size: 14px;
